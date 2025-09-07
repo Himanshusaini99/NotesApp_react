@@ -37,9 +37,6 @@ function App(){
 
   return (
     <div className=' bg-black flex justify-center items-center flex-col text-white min-h-screen'>
-      {location.pathname === "/" && (
-        <h1 className="text-4xl mb-6">CREATE YOUR NOTES</h1>
-      )}
      <RouterProvider router={router}/>
     </div>
   )
