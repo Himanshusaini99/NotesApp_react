@@ -17,7 +17,7 @@ const paste=allpastes.filter((p)=>p._id===id)[0];
       <div className=''>
         <div className='flex justify-center items-center'>
       <input 
-        className='border border-white rounded-2xl p-2 ' 
+        className='border border-white rounded-2xl p-2 w-full sm:w-80 md:w-96' 
         type='text'
         placeholder='Enter the Title'
         value={paste.title}
@@ -29,7 +29,7 @@ const paste=allpastes.filter((p)=>p._id===id)[0];
 
       <div>
         <textarea 
-          className='border border-white w-xl rounded-2xl m-2 bg-gray-800 p-2'
+          className='border border-white w-full sm:w-[500px] md:w-[700px] rounded-2xl m-4 bg-gray-800 p-2'
           value={paste.content}
           placeholder='enter your content here'
           rows={20}

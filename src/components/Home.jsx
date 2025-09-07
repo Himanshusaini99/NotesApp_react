@@ -27,7 +27,7 @@ const Home = () => {
     const paste = {
       content: value,
       title: title,
-      _id: pasteId ? pasteId: Date.now().toString(),
+      _id: pasteId ||  Date.now().toString(30),
       createdAt: new Date().toISOString(),
     };
 
@@ -46,7 +46,7 @@ const Home = () => {
     <div>
       <div className='flex justify-between'>
       <input 
-        className='border border-white rounded-2xl p-2 ml-2' 
+        className='border border-white w-full sm:w-80 md:w-96 rounded-2xl p-2 ml-2' 
         type='text'
         placeholder='Enter the Title'
         value={title}
@@ -62,7 +62,7 @@ const Home = () => {
 </div>
       <div className='w-full'>
         <textarea 
-          className='border border-white w-xl rounded-2xl m-4 bg-gray-800 p-2'
+          className='border border-white w-full sm:w-[500px] md:w-[700px] rounded-2xl m-4 bg-gray-800 p-2'
           value={value}
           placeholder='enter your content here'
           rows={20}
