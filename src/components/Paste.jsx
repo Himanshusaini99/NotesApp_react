@@ -53,7 +53,7 @@ const Paste = () => {
               <div className='flex flex-row gap-3 items-center'>
                 <Link to={`/?pasteId=${paste._id}`}>
                   <button className='w-8 h-8 sm:w-10 sm:h-10'>
-                    <img src="edit.png" />
+                    <img src="/edit.png" />
                   </button>
                 </Link>
 
@@ -61,7 +61,7 @@ const Paste = () => {
                   className='w-8 h-8 sm:w-10 sm:h-10'
                   onClick={() => handleDelete(paste._id)}
                 >
-                  <img src="delete.png" />
+                  <img src="/delete.png" />
                 </button>
 
                 <button
@@ -71,12 +71,12 @@ const Paste = () => {
                     toast.success("Copied to clipboard")
                   }}
                 >
-                  <img src="copy.png" />
+                  <img src="/copy.png" />
                 </button>
 
                 <Link to={`/pastes/${paste._id}`}>
                   <button className='w-8 h-8 sm:w-10 sm:h-10'>
-                    <img src="view.png" />
+                    <img src="/view.png" />
                   </button>
                 </Link>
 
@@ -88,7 +88,7 @@ const Paste = () => {
                     toast.success("Share link copied")
                   }}
                 >
-                  <img src='share.png' />
+                  <img src='/share.png' />
                 </button>
               </div>
 
